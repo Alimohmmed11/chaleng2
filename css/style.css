@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+.chaleng2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.chaleng2 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    position: relative;
+    padding: 15px;
+}
+@media (min-width:767px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:991px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.container .box{
+    background-color: #FF9800;
+    padding: 30px;
+}
+.container  .yellow{
+    background-color: #df8909;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@media (max-width:767px){
+    .container  .yellow{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+}
+.container .yellow span{
+    color:#df8909 ;
+}
+.container  .blue{
+    background-color: #296a75;
+}
+.container  .blue span{
+    color: #296a75;
+}
+.container  .green{
+    background-color: #0a4843;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media (max-width:767px){
+    .container  .green{
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+}
+.container  .green span{
+    color: #0a4843;
+}
+.container .box i{
+    color: #ffffff91;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+}
+.container .box i::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #0000002b;
+    border-radius: 50%;
+    left: 10px;
+    bottom: 5px;
+}
+.container .box h2{
+    font-size: 30px;
+    padding: 0px 10px;
+    color: white;
+    text-transform: uppercase;
+}
+.container .box p{
+    color: rgb(255 255 255 / 70%);
+    font-size: 15px;
+    letter-spacing: 1.3px;
+    padding: 0 10px;
+    
+}
+.container .box span{
+    display: block;
+    background-color: white;
+    padding: 10px 30px;
+    width: fit-content;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
